@@ -25,12 +25,12 @@
     num.forEach(input => {
         input.addEventListener('input', function() {
             let inputValue = Number(this.value);
-            calculateConvertedValue(inputValue);
+            calculateConverted(inputValue);
         })
     });
  }
 
-  function calculateConvertedValue(inputValue) {
+  function calculateConverted(inputValue) {
         let conversionRate = conversionRates[placeholder1][placeholder2];
         let convertedValue = inputValue * conversionRate;
         showConvertedValue(convertedValue);
